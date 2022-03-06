@@ -260,7 +260,7 @@ export default function Home() {
                     }}
                     viewport={{ once: viewportOnce }}
                   >
-                    Hello, I'am
+                    Hello, I&apos;am
                   </motion.h1>
 
                   <motion.div
