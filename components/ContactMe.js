@@ -39,14 +39,14 @@ const aStyle = "w-24 cursor-pointer";
 function ContactMe() {
   return (
     <div className="container py-10 mx-auto" id="contact">
-      <div class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
-        <div class="flex flex-col justify-between">
+      <div className="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
+        <div className="flex flex-col justify-between">
           <div>
-            <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
               Contact Me
             </h2>
             <motion.div
-              class="text-gray-700 mt-8 w-4/5"
+              className="text-gray-700 mt-8 w-4/5"
               variants={popReveal}
               initial="hidden"
               whileInView="show"
@@ -133,34 +133,34 @@ function ContactMe() {
               </motion.a>
             </motion.div>
           </div>
-          <div class="mt-8 text-center"></div>
+          <div className="mt-8 text-center"></div>
         </div>
-        <div class="">
+        <div className="">
           <div>
-            <span class="uppercase text-sm text-gray-600 font-bold">
+            <span className="uppercase text-sm text-gray-600 font-bold">
               Full Name
             </span>
             <input
-              class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="text"
               placeholder=""
             />
           </div>
-          <div class="mt-8">
-            <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
+          <div className="mt-8">
+            <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
             <input
-              class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="text"
             />
           </div>
-          <div class="mt-8">
-            <span class="uppercase text-sm text-gray-600 font-bold">
+          <div className="mt-8">
+            <span className="uppercase text-sm text-gray-600 font-bold">
               Message
             </span>
-            <textarea class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+            <textarea className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
           </div>
-          <div class="mt-8">
-            <button class="uppercase text-sm font-bold tracking-wide bg-yellow-400 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+          <div className="mt-8">
+            <button className="uppercase text-sm font-bold tracking-wide bg-yellow-400 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
               Send Message
             </button>
           </div>

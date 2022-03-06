@@ -184,9 +184,9 @@ export default function Home() {
                 </div>
               </div>
             </div> */}
-            <div class="pt-2  -ml-8">
-              <div class="container px-3 w-screen justify-center mx-auto flex flex-wrap flex-col md:flex-row items-center ">
-                <div class="flex flex-col justify-center items-start text-center md:text-left">
+            <div className="pt-2  -ml-8">
+              <div className="container px-3 w-screen justify-center mx-auto flex flex-wrap flex-col md:flex-row items-center ">
+                <div className="flex flex-col justify-center items-start text-center md:text-left">
                   <motion.div
                     className="flex flex-col h-64 w-64 md:h-64 md:w-64 lg:h-80 lg:w-80 relative self-center items-center justify-center"
                     variants={imageAnimation}
@@ -247,9 +247,9 @@ export default function Home() {
                   </motion.div>
                 </div>
 
-                <div class="w-full md:w-auto py-6 md:text-left md:ml-20">
+                <div className="w-full md:w-auto py-6 md:text-left md:ml-20">
                   <motion.h1
-                    class="my-4 text-5xl font-bold leading-tight"
+                    className="my-4 text-5xl font-bold leading-tight"
                     variants={textAnimation}
                     initial="hidden"
                     whileInView="show"
@@ -264,7 +264,7 @@ export default function Home() {
                   </motion.h1>
 
                   <motion.div
-                    class="leading-normal text-2xl mb-8"
+                    className="leading-normal text-2xl mb-8"
                     variants={typerAnimation}
                     initial="hidden"
                     whileInView="show"
@@ -304,7 +304,7 @@ export default function Home() {
                       }}
                       viewport={{ once: viewportOnce }}
                     >
-                      <button class="rounded-full my-6 py-4 px-8 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80   text-3xl  text-center mr-2 mb-2 hover:scale-105 duration-300 ease-in-out">
+                      <button className="rounded-full my-6 py-4 px-8 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80   text-3xl  text-center mr-2 mb-2 hover:scale-105 duration-300 ease-in-out">
                         Hire Me
                       </button>
                       {/* </motion.div> */}
@@ -323,7 +323,7 @@ export default function Home() {
                     >
                       <button
                         type="button"
-                        class="rounded-full ml-4 my-6 py-4 px-8 text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium  text-3xl  text-center mr-2 mb-2 hover:scale-105 duration-300 ease-in-out"
+                        className="rounded-full ml-4 my-6 py-4 px-8 text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium  text-3xl  text-center mr-2 mb-2 hover:scale-105 duration-300 ease-in-out"
                       >
                         Download CV
                       </button>
