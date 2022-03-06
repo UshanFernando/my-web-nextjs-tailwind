@@ -74,7 +74,7 @@ function Profile() {
 
           <p className="pt-2 text-sm">
             Hi, My name is <span className="font-semibold">Ushan Fernando</span>
-            , I'm a tech enthusiast who is addicted to programming. and excited
+            , I&apos;m a tech enthusiast who is addicted to programming. and excited
             to learn new things.
           </p>
 
