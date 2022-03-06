@@ -41,13 +41,14 @@ function Projects() {
         {projects.map((e, i) => {
           return (
             <motion.div
+              key={i}
               variants={popReveal}
               initial="hidden"
               whileInView="show"
               transition={{
                 ease: "easeInOut",
                 duration: 1.4,
-                delay: i/10,
+                delay: i / 10,
               }}
               viewport={{ once: true }}
             >
@@ -57,7 +58,6 @@ function Projects() {
                 image={e.images[0]}
                 technologies={e.technologies}
               />
-              
             </motion.div>
           );
         })}
