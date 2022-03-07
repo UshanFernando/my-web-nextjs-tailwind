@@ -33,7 +33,7 @@ const popReveal = {
 
 function Projects() {
   return (
-    <div className="container py-20 mx-auto" id="projects">
+    <div className="container py-10 mx-auto" id="projects">
       <h1 className="text-3xl font-bold self-center text-center text-gray-900 mb-4 ">
         My Projects
       </h1>

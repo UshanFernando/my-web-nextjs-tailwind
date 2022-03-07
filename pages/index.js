@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 
 const textAnimation = {
-  hidden: { y: 500 },
+  hidden: { y: 100 },
   show: {
     y: 0,
   },
@@ -37,6 +37,13 @@ const typerAnimation = {
 
 const buttonAnimation = {
   hidden: { opacity: 0, y: 200 },
+  show: {
+    opacity: 1,
+    y: 0,
+  },
+};
+const buttonAnimation2 = {
+  hidden: { opacity: 0, y: 70 },
   show: {
     opacity: 1,
     y: 0,
@@ -292,7 +299,7 @@ export default function Home() {
                     Sub-hero message, not too long and not too short. Make it
                     just right!
                   </p> */}
-                  <div className="flex flex-row">
+                  <div className="sm:flex flex-row hidden">
                     <motion.div
                       variants={buttonAnimation}
                       initial="hidden"
@@ -324,6 +331,44 @@ export default function Home() {
                       <button
                         type="button"
                         className="rounded-full ml-4 my-6 py-4 px-8 text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium  text-3xl  text-center mr-2 mb-2 hover:scale-105 duration-300 ease-in-out"
+                      >
+                        Download CV
+                      </button>
+                    </motion.div>
+                  </div>
+                {/* //Mobile View */}
+                  <div className="flex flex-row sm:hidden  justify-center -ml-3">
+                    <motion.div
+                      variants={buttonAnimation2}
+                      initial="hidden"
+                      whileInView="show"
+                      transition={{
+                        ease: "easeInOut",
+                        duration: 1,
+                        delay: 1.2,
+                      }}
+                      viewport={{ once: viewportOnce }}
+                    >
+                      <button className="rounded-full my-6 py-4 px-8 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80   text-xl  text-center mr-2 mb-2 hover:scale-105 duration-300 ease-in-out">
+                        Hire Me
+                      </button>
+                      {/* </motion.div> */}
+                    </motion.div>
+
+                    <motion.div
+                      variants={buttonAnimation2}
+                      initial="hidden"
+                      whileInView="show"
+                      transition={{
+                        ease: "easeInOut",
+                        duration: 1,
+                        delay: 1.4,
+                      }}
+                      viewport={{ once: viewportOnce }}
+                    >
+                      <button
+                        type="button"
+                        className="rounded-full ml-4 my-6 py-4 px-6 text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium  text-xl  text-center  mb-2 hover:scale-105 duration-300 ease-in-out"
                       >
                         Download CV
                       </button>

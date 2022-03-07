@@ -7,14 +7,14 @@ import dp from "../assets/dpulz.jpg";
 import { motion } from "framer-motion";
 
 const slideLeft = {
-  hidden: { x: -400 },
+  hidden: { x: -300 },
   show: {
     x: 0,
   },
 };
 
 const slideRight = {
-  hidden: { x: 400, opacity: 0 },
+  hidden: { x: 300, opacity: 0 },
   show: {
     x: 0,
     opacity: 1,
@@ -47,7 +47,7 @@ function WorkExperience() {
             transition={{
               ease: "easeInOut",
               duration: 1.4,
-              delay: 0.2,
+              delay: 0,
             }}
             viewport={{ once: true }}
           >
@@ -71,7 +71,7 @@ function WorkExperience() {
             transition={{
               ease: "easeInOut",
               duration: 1.4,
-              delay: 0.2,
+              delay: 0.3,
             }}
             viewport={{ once: viewportOnce }}
           >
@@ -111,7 +111,7 @@ function WorkExperience() {
             transition={{
               ease: "easeInOut",
               duration: 1.4,
-              delay: 0.2,
+              delay: 0.5,
             }}
             viewport={{ once: viewportOnce }}
           >
@@ -135,7 +135,7 @@ function WorkExperience() {
             transition={{
               ease: "easeInOut",
               duration: 1.4,
-              delay: 0.2,
+              delay: 0.8,
             }}
             viewport={{ once: viewportOnce }}
           >

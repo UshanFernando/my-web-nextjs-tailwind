@@ -38,8 +38,8 @@ const titleStyle = "text-center leading-4  mb-4 mt-2";
 const aStyle = "w-24 cursor-pointer";
 function ContactMe() {
   return (
-    <div className="container py-10 mx-auto" id="contact">
-      <div className="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
+    <div className="container sm:py-10 py-0 mx-auto " id="contact">
+      <div className="max-w-screen-xl  px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
         <div className="flex flex-col justify-between">
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
@@ -160,7 +160,7 @@ function ContactMe() {
             <textarea className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
           </div>
           <div className="mt-8">
-            <button className="uppercase text-sm font-bold tracking-wide bg-yellow-400 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+            <button className="uppercase text-sm font-bold tracking-wide bg-yellow-400  p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-yellow-300 text-slate-700">
               Send Message
             </button>
           </div>

@@ -7,14 +7,14 @@ import sliit from "../assets/sliit.png";
 import { motion } from "framer-motion";
 
 const slideLeft = {
-  hidden: { x: -400 },
+  hidden: { x: -300 },
   show: {
     x: 0,
   },
 };
 
 const slideRight = {
-  hidden: { x: 400 },
+  hidden: { x: 300 },
   show: {
     x: 0,
   },
@@ -38,8 +38,8 @@ function Education() {
       </h1>
       <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 mr-auto text-blue-50 w-screen">
         {/* left */}
-                {/* left */}
-                <div className="flex flex-col-reverse sm:flex-row-reverse md:contents">
+        {/* left */}
+        <div className="flex flex-col-reverse sm:flex-row-reverse md:contents">
           <motion.div
             className="bg-gradient-to-r from-orange-300 to-rose-400  col-start-1 col-end-5 p-4 rounded-xl my-4 sm:ml-auto shadow-md flex lg:flex-row sm:flex-row flex-row md:flex-col xs:flex-row sm:mx-0 mx-2"
             variants={slideLeft}
@@ -56,12 +56,16 @@ function Education() {
               <Image src={sliit} className="rounded-none" />
             </div>
             <div className="col px-5 pt-2">
-              <h3 className="font-bold text-lg -mb-2">Sri Lanka Institute of </h3>
+              <h3 className="font-bold text-lg -mb-2">
+                Sri Lanka Institute of{" "}
+              </h3>
               <h3 className="font-bold text-lg ">Information Technology</h3>
               <h3 className=" text-lg -mb-2">
                 BSc (Hons) in Information Technology
               </h3>
-              <h3 className=" text-lg mb-1">Specialized in Software Engineering</h3>
+              <h3 className=" text-lg mb-1">
+                Specialized in Software Engineering
+              </h3>
               <ul className="list-disc ml-6">
                 {/* <li className="leading-tight text-justify"> First Class Honours</li> */}
                 <li className="leading-tight text-justify"> 3.73 WGPA</li>
@@ -137,7 +141,10 @@ function Education() {
             viewport={{ once: viewportOnce }}
           >
             <div className="col w-32 h-32 bg-white mr-4 p-3 rounded-xl md:ml-4 lg:ml-0 sm:ml-0 ">
-              <Image src={ds} className="rounded-none lg:rounded-lg shadow-2xl " />
+              <Image
+                src={ds}
+                className="rounded-none lg:rounded-lg shadow-2xl "
+              />
             </div>
             <div className="col px-5 pt-2">
               <h3 className="font-bold text-lg -mb-1">DS Senanayake College</h3>
@@ -198,10 +205,6 @@ function Education() {
             </h3>
           </motion.div>
         </div>
-
-        
-
-
       </div>
     </div>
   );
