@@ -9,7 +9,7 @@ function Footer() {
         <a className="text-gray-800 font-semibold" href="https://tailwind-elements.com/">
           &nbsp; Ushan Fernando (www.ushan.me)
         </a>
-        <p class="text-center ">
+        <p className="text-center ">
           Developed Using Tailwind CSS, NextJS and Framer Motion
         </p>
       </div>
