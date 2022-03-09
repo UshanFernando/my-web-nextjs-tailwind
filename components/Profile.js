@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../assets/me.jpeg";
+import me from "../assets/me.webp";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -24,7 +24,7 @@ const avatarAnimation = {
   },
 };
 
-const viewportOnce = true;
+const viewportOnce = false;
 
 function Profile() {
   return (
@@ -37,7 +37,6 @@ function Profile() {
         initial="hidden"
         whileInView="show"
         transition={{
-          ease: "easeInOut",
           duration: 1.4,
           delay: 0,
         }}
@@ -49,9 +48,8 @@ function Profile() {
           initial="hidden"
           whileInView="show"
           transition={{
-            ease: "easeInOut",
             duration: 1.4,
-            delay: 0.6,
+            delay: 1.4,
           }}
           viewport={{ once: viewportOnce }}
         >
@@ -61,7 +59,6 @@ function Profile() {
             initial="hidden"
             whileInView="show"
             transition={{
-              ease: "easeInOut",
               duration: 1.4,
               delay: 0,
             }}

@@ -4,14 +4,17 @@ import Image from "next/image";
 
 function ProjectComponent({ title, desc, image, technologies }) {
   return (
-    <div className="flex justify-center h-full">
-      <div className="rounded-lg shadow-lg bg-white max-w-sm">
-        <a href="#!">
+    <div className="flex justify-center  mb-10 h-full max-w-sm">
+      <div className="rounded-lg shadow-lg bg-white ">
+        <center className="mt-2">
           <Image
             src={image}
-            className="rounded-none hover:scale-110 transition duration-150 ease-in-out"
+            className="rounded-none hover:scale-110 transition duration-150 ease-in-out "
+            height={200}
+            width={360}
+            objectFit='cover'
           />
-        </a>
+        </center>
         <div className="p-6">
           <h5 className="text-gray-900 text-xl font-medium mb-2">{title}</h5>
           <p className="text-gray-700 text-base mb-4 leading-5 text-justify">

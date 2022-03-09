@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import me from "../assets/me.jpeg";
+import me from "../assets/me.webp";
 import Typewriter from "typewriter-effect";
 import Nav from "../components/Nav";
 import Profile from "../components/Profile";
