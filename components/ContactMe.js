@@ -72,7 +72,7 @@ function ContactMe() {
               }}
               viewport={{ once: true }}
             >
-              <motion.a className={aStyle} variants={techLogoItem}>
+              <motion.a className={aStyle} variants={techLogoItem} href="https://mail.google.com/mail/u/0/?fs=1&to=ushansankalpafernando@gmail.com&tf=cm" target="_blank">
                 <Gmail
                   className="mx-auto"
                   color="#3c3c3c"
@@ -82,27 +82,27 @@ function ContactMe() {
                 <p className={titleStyle}>Gmail</p>
               </motion.a>
 
-              <motion.a className={aStyle} variants={techLogoItem}>
+              <motion.a className={aStyle} variants={techLogoItem} href="https://www.instagram.com/ushanfernando/?hl=en" target="_blank">
                 <Instagram
                   className="mx-auto"
                   color="#3c3c3c"
                   size={48}
-                  title="Github"
+                  title="Instagram"
                 />
-                <p className={titleStyle}>Github</p>
+                <p className={titleStyle}>Instagram</p>
               </motion.a>
 
-              <motion.a className={aStyle} variants={techLogoItem}>
+              <motion.a className={aStyle} variants={techLogoItem} href="https://www.facebook.com/ushan.fernando.315" target="_blank">
                 <Facebook
                   className="mx-auto"
                   color="#3c3c3c"
                   size={48}
-                  title="Github"
+                  title="Facebook"
                 />
-                <p className={titleStyle}>Github</p>
+                <p className={titleStyle}>Facebook</p>
               </motion.a>
 
-              <motion.a className={aStyle} variants={techLogoItem}>
+              <motion.a className={aStyle} variants={techLogoItem} href="https://github.com/UshanFernando" target="_blank">
                 <Github
                   className="mx-auto"
                   color="#3c3c3c"
@@ -112,7 +112,7 @@ function ContactMe() {
                 <p className={titleStyle}>Github</p>
               </motion.a>
 
-              <motion.a className={aStyle} variants={techLogoItem}>
+              <motion.a className={aStyle} variants={techLogoItem} href="https://www.linkedin.com/in/ushan-fernando/" target="_blank">
                 <Linkedin
                   className="mx-auto"
                   color="#3c3c3c"
@@ -122,7 +122,7 @@ function ContactMe() {
                 <p className={titleStyle}>Linkedin</p>
               </motion.a>
 
-              <motion.a className={aStyle} variants={techLogoItem}>
+              <motion.a className={aStyle} variants={techLogoItem} href="https://stackoverflow.com/users/8342080/ushan-fernando" target="_blank">
                 <Stackoverflow
                   className="mx-auto"
                   color="#3c3c3c"

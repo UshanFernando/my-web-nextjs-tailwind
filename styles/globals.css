@@ -14,6 +14,10 @@
     color: white;
     text-align: center;
   }
+
+  .gradientBg{
+    background: linear-gradient(#3800e7, #8a15ff);
+  }
   .main {
     margin: top 6px;
     height: 98vh;
@@ -134,7 +138,15 @@
   }
 
   /* shapes */
-
+	.blue-circle{
+		animation-delay: 0.1s;
+	}
+	.green-circle{
+		animation-delay: 0.2s;
+	}
+	.red-circle{
+		animation-delay: 0.3s;
+	}
 
   @keyframes draw {
     from {
