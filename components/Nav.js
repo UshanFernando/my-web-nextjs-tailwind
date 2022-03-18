@@ -183,20 +183,41 @@ function Nav() {
               <a
                 href="#"
                 className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() =>
+                  scrollIntoView(profile, {
+                    scrollMode: "if-needed",
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
               >
-                Dashboard
+                About Me
               </a>
 
               <a
                 href="#"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() =>
+                  scrollIntoView(education, {
+                    scrollMode: "if-needed",
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
               >
-                Team
+                Education
               </a>
 
               <a
                 href="#"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() =>
+                  scrollIntoView(projects, {
+                    scrollMode: "if-needed",
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
               >
                 Projects
               </a>
@@ -204,15 +225,29 @@ function Nav() {
               <a
                 href="#"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() =>
+                  scrollIntoView(skills, {
+                    scrollMode: "if-needed",
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
               >
-                Calendar
+                Skills
               </a>
 
               <a
                 href="#"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() =>
+                  scrollIntoView(contact, {
+                    scrollMode: "if-needed",
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
               >
-                Reports
+                Contact Me
               </a>
             </div>
           </div>

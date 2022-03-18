@@ -12,6 +12,8 @@ import Projects from "../components/Projects";
 import ContactMe from "../components/ContactMe";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
+import scrollIntoView from "scroll-into-view-if-needed";
 
 const textAnimation = {
   hidden: { y: 100 },
@@ -56,7 +58,14 @@ const techLogoItem = {
   hidden: { scale: 0 },
   show: { scale: 1, transition: { ease: "anticipate", duration: 1 } },
 };
+
+const cvUrl = "https://drive.google.com/file/d/1BCwFhYtqwQwYFdeUZBbxo8bV_dADLO_M/view?usp=sharing";
 export default function Home() {
+  let contact;
+  useEffect(() => {
+    contact = document.getElementById("contact");
+  }, []);
+
   return (
     <div className="overflow-hidden">
       <Head>
@@ -310,14 +319,24 @@ export default function Home() {
                         delay: 1.2,
                       }}
                       viewport={{ once: viewportOnce }}
+                     
                     >
-                      <button className="rounded-full my-6 py-4 px-8 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80   text-3xl  text-center mr-2 mb-2 hover:scale-105 duration-300 ease-in-out">
+                      <button
+                        className="rounded-full my-6 py-4 px-8 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80   text-3xl  text-center mr-2 mb-2 hover:scale-105 duration-300 ease-in-out"
+                        onClick={() =>
+                          scrollIntoView(contact, {
+                            scrollMode: "if-needed",
+                            behavior: "smooth",
+                            block: "start",
+                          })
+                        }
+                      >
                         Hire Me
                       </button>
                       {/* </motion.div> */}
                     </motion.div>
 
-                    <motion.div
+                    <motion.a
                       variants={buttonAnimation}
                       initial="hidden"
                       whileInView="show"
@@ -327,16 +346,20 @@ export default function Home() {
                         delay: 1.4,
                       }}
                       viewport={{ once: viewportOnce }}
+                      target="_blank"
+                      href={cvUrl}
                     >
                       <button
                         type="button"
                         className="rounded-full ml-4 my-6 py-4 px-8 text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium  text-3xl  text-center mr-2 mb-2 hover:scale-105 duration-300 ease-in-out"
+                        ty
+             
                       >
                         Download CV
                       </button>
-                    </motion.div>
+                    </motion.a>
                   </div>
-                {/* //Mobile View */}
+                  {/* //Mobile View */}
                   <div className="flex flex-row sm:hidden  justify-center -ml-3">
                     <motion.div
                       variants={buttonAnimation2}
@@ -348,14 +371,24 @@ export default function Home() {
                         delay: 1.2,
                       }}
                       viewport={{ once: viewportOnce }}
+                      
                     >
-                      <button className="rounded-full my-6 py-4 px-8 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80   text-xl  text-center mr-2 mb-2 hover:scale-105 duration-300 ease-in-out">
+                      <button
+                        className="rounded-full my-6 py-4 px-8 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80   text-xl  text-center mr-2 mb-2 hover:scale-105 duration-300 ease-in-out"
+                        onClick={() =>
+                          scrollIntoView(contact, {
+                            scrollMode: "if-needed",
+                            behavior: "smooth",
+                            block: "start",
+                          })
+                        }
+                      >
                         Hire Me
                       </button>
                       {/* </motion.div> */}
                     </motion.div>
 
-                    <motion.div
+                    <motion.a
                       variants={buttonAnimation2}
                       initial="hidden"
                       whileInView="show"
@@ -365,6 +398,8 @@ export default function Home() {
                         delay: 1.4,
                       }}
                       viewport={{ once: viewportOnce }}
+                      href={cvUrl}
+                      target="_blank"
                     >
                       <button
                         type="button"
@@ -372,7 +407,7 @@ export default function Home() {
                       >
                         Download CV
                       </button>
-                    </motion.div>
+                    </motion.a>
                   </div>
                 </div>
               </div>
@@ -408,7 +443,7 @@ export default function Home() {
       <div className="bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-400">
         <ContactMe />
       </div>
-      
+
       <div className="bg-white">
         <Footer />
       </div>
